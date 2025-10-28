@@ -1,97 +1,167 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Musicien et guitariste professionnel au Pays Basque - Ambiance musicale pour restaurants et pubs">
-    <title>Matious P - Musicien & Guitariste | Pays Basque</title>
+    <meta name="description" content="Matias Durruty - Musicien professionnel à Biarritz. Guitare et chant pour mariages, anniversaires, bars et événements. Nouvelle Aquitaine et Pays Basque.">
+    <meta name="keywords" content="musicien, Biarritz, guitare, chant, mariage, anniversaire, événement, Pays Basque, Nouvelle Aquitaine">
+    <title>Matias Durruty - Musicien Professionnel | Guitare & Chant</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Language Switcher -->
-    <div class="language-switcher">
-        <button class="lang-btn active" data-lang="fr">FR</button>
-        <button class="lang-btn" data-lang="eu">EU</button>
-    </div>
-
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Matious P</a>
-            <ul class="nav-menu">
-                <li><a href="#hero" class="nav-link" data-fr="Accueil" data-eu="Hasiera">Accueil</a></li>
-                <li><a href="#about" class="nav-link" data-fr="À Propos" data-eu="Nortasuna">À Propos</a></li>
-                <li><a href="#services" class="nav-link" data-fr="Services" data-eu="Zerbitzuak">Services</a></li>
-                <li><a href="#music" class="nav-link" data-fr="Musique" data-eu="Musika">Musique</a></li>
-                <li><a href="#contact" class="nav-link" data-fr="Contact" data-eu="Kontaktua">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="container">
+            <a href="#accueil" class="logo">Matias Durruty</a>
+            <div class="nav-right">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+                    <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                    <button class="lang-btn" data-lang="eu" aria-label="Euskara">EU</button>
+                    <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#accueil" data-i18n="nav.home">Accueil</a></li>
+                    <li><a href="#a-propos" data-i18n="nav.about">À Propos</a></li>
+                    <li><a href="#prestations" data-i18n="nav.services">Prestations</a></li>
+                    <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="#tarifs" data-i18n="nav.pricing">Tarifs</a></li>
+                    <li><a href="#contact" class="btn-contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section id="accueil" class="hero">
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title animate-fade-in" data-fr="Matious P" data-eu="Matious P">Matious P</h1>
-            <p class="hero-subtitle animate-fade-in-delay"
-               data-fr="Musicien & Guitariste - Pays Basque"
-               data-eu="Musikaria & Gitarra-joltzailea - Euskal Herria">
-                Musicien & Guitariste - Pays Basque
-            </p>
-            <p class="hero-description animate-fade-in-delay-2"
-               data-fr="Créez une ambiance unique pour votre restaurant ou pub avec une musique live authentique"
-               data-eu="Sortu giro berezia zure jatetxean edo tabernan musika zuzenarekin">
-                Créez une ambiance unique pour votre restaurant ou pub avec une musique live authentique
-            </p>
-            <a href="#contact" class="cta-button animate-fade-in-delay-3" data-fr="Réserver" data-eu="Erreserbatu">Réserver</a>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" data-i18n="hero.title">Matias Durruty</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Musicien Solo • Guitare & Chant</p>
+                <p class="hero-location" data-i18n="hero.location">Biarritz • Pays Basque</p>
+                <a href="#contact" class="btn-primary" data-i18n="hero.cta">Me contacter</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Matias Durruty - Musicien avec guitare" class="profile-image">
+            </div>
         </div>
         <div class="scroll-indicator">
-            <span></span>
+            <span data-i18n="hero.scrollText">Découvrir</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="a-propos" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-fr="À Propos" data-eu="Nortasuna">À Propos</h2>
-                <div class="title-underline"></div>
-            </div>
+            <h2 class="section-title" data-i18n="about.title">À Propos</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-lead"
-                       data-fr="Passionné de musique depuis toujours, je mets mon talent au service de vos établissements."
-                       data-eu="Musikazale betidanik, nire talentua zure establezimenduaren zerbitzura jartzen dut.">
-                        Passionné de musique depuis toujours, je mets mon talent au service de vos établissements.
-                    </p>
-                    <p class="about-description"
-                       data-fr="Guitariste professionnel basé au Pays Basque, je propose des prestations musicales live pour créer une atmosphère chaleureuse et conviviale dans votre restaurant ou pub. Mon répertoire varié s'adapte à tous les publics et toutes les ambiances."
-                       data-eu="Euskal Herrian kokatutako gitarra-jotzaile profesionala, musika zuzeneko emanaldiak eskaintzen ditut zure jatetxean edo tabernan giro beroa eta atsegina sortzeko. Nire errepartorio dibertsoak jende guztietara eta giro guztietara egokitzen da.">
-                        Guitariste professionnel basé au Pays Basque, je propose des prestations musicales live pour créer une atmosphère chaleureuse et conviviale dans votre restaurant ou pub. Mon répertoire varié s'adapte à tous les publics et toutes les ambiances.
-                    </p>
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">🎸</div>
-                            <h3 data-fr="Expérience" data-eu="Esperientzia">Expérience</h3>
-                            <p data-fr="Plus de 10 ans de scène" data-eu="10 urte baino gehiago eszeneratzen">Plus de 10 ans de scène</p>
+                    <p class="lead" data-i18n="about.lead">Trentenaire basé à Biarritz, j'ai eu la chance de jouer avec de nombreux groupes musicaux au fil des années. Aujourd'hui, je m'épanouis exclusivement dans le jeu en solo, guitare et chant, en interprétant des reprises connues qui donnent envie aux gens de chanter et danser.</p>
+
+                    <p data-i18n-html="about.paragraph1">Mon style musical est <strong>varié et adapté à vos envies</strong>. Je propose plusieurs sets suivant vos demandes : chants basques entraînants, covers flamenco, variété française, anglaise, espagnole, ou encore un mélange de tout ça !</p>
+
+                    <p data-i18n-html="about.paragraph2">J'aime animer des événements variés à la guitare et au chant. Mon plaisir est communicatif, et je cherche avant tout <strong>la joie et le plaisir des gens</strong> qui participent à l'animation.</p>
+
+                    <blockquote class="quote">
+                        <p data-i18n="about.quote">« La musique se partage, elle ne doit pas partager les gens. »</p>
+                        <cite data-i18n="about.quoteAuthor">— Sylvain Luc</cite>
+                    </blockquote>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🎸</div>
+                        <h3 data-i18n="about.highlight1Title">Solo Guitare & Chant</h3>
+                        <p data-i18n="about.highlight1Text">Performance authentique et intimiste</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🎵</div>
+                        <h3 data-i18n="about.highlight2Title">Répertoire Varié</h3>
+                        <p data-i18n="about.highlight2Text">Du basque au flamenco, de la variété française aux hits internationaux</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">✨</div>
+                        <h3 data-i18n="about.highlight3Title">Plaisir Communicatif</h3>
+                        <p data-i18n="about.highlight3Text">Une ambiance chaleureuse et festive garantie</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prestations Section -->
+    <section id="prestations" class="prestations">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services.title">Mes Prestations</h2>
+            <p class="section-subtitle" data-i18n="services.subtitle">Des sets musicaux adaptés à tous vos événements</p>
+
+            <div class="prestations-grid">
+                <div class="prestation-card">
+                    <div class="card-icon">🏔️</div>
+                    <h3 data-i18n="services.service1Title">Chants Basques</h3>
+                    <p data-i18n="services.service1Text">Répertoire traditionnel et entraînant pour célébrer la culture basque. Parfait pour les mariages et fêtes locales.</p>
+                </div>
+
+                <div class="prestation-card">
+                    <div class="card-icon">💃</div>
+                    <h3 data-i18n="services.service2Title">Covers Flamenco</h3>
+                    <p data-i18n="services.service2Text">Des rythmes enflammés et passionnés qui transportent votre public vers l'Espagne.</p>
+                </div>
+
+                <div class="prestation-card">
+                    <div class="card-icon">🎤</div>
+                    <h3 data-i18n="services.service3Title">Variété Internationale</h3>
+                    <p data-i18n="services.service3Text">Hits français, anglais et espagnols que tout le monde connaît et adore chanter.</p>
+                </div>
+
+                <div class="prestation-card">
+                    <div class="card-icon">🎨</div>
+                    <h3 data-i18n="services.service4Title">Mix Personnalisé</h3>
+                    <p data-i18n="services.service4Text">Un mélange sur mesure adapté à l'ambiance et aux goûts de votre événement.</p>
+                </div>
+            </div>
+
+            <div class="services-details">
+                <h3 data-i18n="services.detailsTitle">Services Inclus</h3>
+                <div class="services-list">
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div>
+                            <strong data-i18n="services.detail1Title">Apprentissage sur demande</strong>
+                            <p data-i18n="services.detail1Text">Je peux apprendre vos chansons préférées et créer des covers guitare-chant spécialement pour votre événement.</p>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🎵</div>
-                            <h3 data-fr="Répertoire" data-eu="Errepartioa">Répertoire</h3>
-                            <p data-fr="Large sélection de styles" data-eu="Estilo ugari">Large sélection de styles</p>
+                    </div>
+
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div>
+                            <strong data-i18n="services.detail2Title">Équipement autonome</strong>
+                            <p data-i18n="services.detail2Text">Je viens avec mon matériel : guitare électro-acoustique et micro chant, sonorisé et amplifié. Seule une prise électrique à proximité est nécessaire.</p>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">✨</div>
-                            <h3 data-fr="Professionnalisme" data-eu="Profesionaltasuna">Professionnalisme</h3>
-                            <p data-fr="Service de qualité garanti" data-eu="Kalitate bermea">Service de qualité garanti</p>
+                    </div>
+
+                    <div class="service-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        <div>
+                            <strong data-i18n="services.detail3Title">Zone de déplacement</strong>
+                            <p data-i18n="services.detail3Text">Je me déplace en Nouvelle-Aquitaine et au Pays Basque (Hego Alde). Basé à Biarritz.</p>
                         </div>
                     </div>
                 </div>
@@ -99,153 +169,103 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-fr="Mes Services" data-eu="Nire Zerbitzuak">Mes Services</h2>
-                <div class="title-underline"></div>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🍽️</div>
-                    <h3 data-fr="Restaurants" data-eu="Jatetxeak">Restaurants</h3>
-                    <p data-fr="Ambiance musicale pour accompagner vos clients pendant leur repas. Musique acoustique douce et raffinée."
-                       data-eu="Giro musikala zure bezeroak bazkarian laguntzeko. Musika akustiko leuna eta fina.">
-                        Ambiance musicale pour accompagner vos clients pendant leur repas. Musique acoustique douce et raffinée.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🍺</div>
-                    <h3 data-fr="Pubs & Bars" data-eu="Taberna & Barrak">Pubs & Bars</h3>
-                    <p data-fr="Animations live pour dynamiser vos soirées. Répertoire varié pour créer une atmosphère festive."
-                       data-eu="Zuzeneko animazioak zure gauen bizitza emateko. Errepartorio zabala giro festiboa sortzeko.">
-                        Animations live pour dynamiser vos soirées. Répertoire varié pour créer une atmosphère festive.
-                    </p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🎉</div>
-                    <h3 data-fr="Événements Privés" data-eu="Ekitaldi Pribatuak">Événements Privés</h3>
-                    <p data-fr="Prestations sur mesure pour vos événements spéciaux : anniversaires, mariages, soirées d'entreprise."
-                       data-eu="Neurri bateratako emanaldiak zure ekitaldi berezientzat: urtebetetze, eztegune, enpresako arratsaldeak.">
-                        Prestations sur mesure pour vos événements spéciaux : anniversaires, mariages, soirées d'entreprise.
-                    </p>
-                </div>
-            </div>
-            <div class="repertoire">
-                <h3 data-fr="Répertoire Musical" data-eu="Musika Errepartioa">Répertoire Musical</h3>
-                <div class="genre-tags">
-                    <span class="genre-tag">Jazz</span>
-                    <span class="genre-tag">Blues</span>
-                    <span class="genre-tag">Rock</span>
-                    <span class="genre-tag">Pop</span>
-                    <span class="genre-tag">Folk</span>
-                    <span class="genre-tag">Bossa Nova</span>
-                    <span class="genre-tag" data-fr="Chanson Française" data-eu="Chanson Française">Chanson Française</span>
-                    <span class="genre-tag" data-fr="Musique Basque" data-eu="Euskal Musika">Musique Basque</span>
-                </div>
-            </div>
+            <h2 class="section-title" data-i18n="portfolio.title">Portfolio</h2>
+            <p class="section-subtitle" data-i18n="portfolio.subtitle">Quelques événements marquants</p>
 
-            <div class="pricing-section">
-                <h3 data-fr="Tarifs & Équipement" data-eu="Tarifak & Ekipamendua">Tarifs & Équipement</h3>
-                <div class="pricing-info">
-                    <div class="pricing-card">
-                        <div class="price-icon">🎸</div>
-                        <h4 data-fr="Première Prestation" data-eu="Lehen Emanaldia">Première Prestation</h4>
-                        <p class="price" data-fr="GRATUITE" data-eu="DOAN">GRATUITE</p>
-                        <p class="price-description"
-                           data-fr="Pour vous permettre de découvrir mon univers musical"
-                           data-eu="Nire musika unibertsoa aurkitzeko">
-                            Pour vous permettre de découvrir mon univers musical
-                        </p>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="pricing-card">
-                        <div class="price-icon">🎵</div>
-                        <h4 data-fr="Tarif Soirée" data-eu="Arratsalde Prezioa">Tarif Soirée</h4>
-                        <p class="price">150€</p>
-                        <p class="price-description"
-                           data-fr="Par soirée (environ 3h de musique)"
-                           data-eu="Arratsalde bakoitzeko (3 ordu inguru musika)">
-                            Par soirée (environ 3h de musique)
-                        </p>
+                    <div class="portfolio-content">
+                        <h3 data-i18n="portfolio.event1Title">Mariage Basque</h3>
+                        <p class="portfolio-location" data-i18n="portfolio.event1Location">Domaine de Larbeou, Bayonne</p>
+                        <p data-i18n="portfolio.event1Text">Une journée mémorable entièrement en basque ! Tous les chants bien connus ont été joués pour le plus grand plaisir des invités. Tout le monde chantait en chœur et dansait les mutxiko dans une ambiance festive et authentique.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag" data-i18n="portfolio.event1Tag1">Mariage</span>
+                            <span class="tag" data-i18n="portfolio.event1Tag2">Chants Basques</span>
+                            <span class="tag" data-i18n="portfolio.event1Tag3">Bayonne</span>
+                        </div>
                     </div>
                 </div>
-                <div class="equipment-info">
-                    <h4 data-fr="Équipement Professionnel" data-eu="Ekipamendu Profesionala">Équipement Professionnel</h4>
-                    <p data-fr="Je dispose de tout le matériel nécessaire pour mes prestations :"
-                       data-eu="Ekipamendu guztia daukat nire emanaldietarako :">
-                        Je dispose de tout le matériel nécessaire pour mes prestations :
-                    </p>
-                    <ul class="equipment-list">
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                <polyline points="21 15 16 10 5 21"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 data-i18n="portfolio.event2Title">Soirée du 14 Juillet 2025</h3>
+                        <p class="portfolio-location" data-i18n="portfolio.event2Location">Debololo, Marbella</p>
+                        <p data-i18n="portfolio.event2Text">Un set varié et entraînant mélangeant variétés basques, françaises et européennes. Une soirée festive où le public a chanté et dansé jusqu'au bout de la nuit dans une ambiance conviviale.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag" data-i18n="portfolio.event2Tag1">Fête Nationale</span>
+                            <span class="tag" data-i18n="portfolio.event2Tag2">Mix Varié</span>
+                            <span class="tag" data-i18n="portfolio.event2Tag3">Marbella</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tarifs Section -->
+    <section id="tarifs" class="tarifs">
+        <div class="container">
+            <h2 class="section-title" data-i18n="pricing.title">Tarifs</h2>
+            <div class="tarifs-content">
+                <div class="tarif-main">
+                    <div class="tarif-price">
+                        <span class="price-amount" data-i18n="pricing.amount">200€</span>
+                        <span class="price-duration" data-i18n="pricing.duration">pour 2 heures</span>
+                    </div>
+                    <ul class="tarif-details">
                         <li>
-                            <strong data-fr="Amplificateur" data-eu="Anplifikadorea">Amplificateur</strong>
-                            <span>: Marshall AS50D</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span data-i18n="pricing.detail1">Prestation de 2 heures de musique</span>
                         </li>
                         <li>
-                            <strong data-fr="Guitare" data-eu="Gitarra">Guitare</strong>
-                            <span>: Alhambra</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span data-i18n="pricing.detail2">Possibilité d'entrecouper de discours et temps de pause</span>
                         </li>
                         <li>
-                            <strong data-fr="Micro" data-eu="Mikrofonoa">Micro</strong>
-                            <span data-fr=": Microphone de qualité professionnelle"
-                                  data-eu=": Kalitate profesionaleko mikrofonoa">
-                                : Microphone de qualité professionnelle
-                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span data-i18n="pricing.detail3">Équipement professionnel inclus</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span data-i18n="pricing.detail4">Déplacement Nouvelle-Aquitaine & Pays Basque</span>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Music/Gallery Section -->
-    <section id="music" class="music">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-fr="Ma Musique" data-eu="Nire Musika">Ma Musique</h2>
-                <div class="title-underline"></div>
-            </div>
-            <p class="section-description"
-               data-fr="Découvrez mes performances et suivez-moi sur Instagram pour plus de contenu musical"
-               data-eu="Aurkitu nire emanaldiak eta jarraitu Instagram-en musika eduki gehiago ikusteko">
-                Découvrez mes performances et suivez-moi sur Instagram pour plus de contenu musical
-            </p>
-
-            <!-- Instagram Embed -->
-            <div class="instagram-container">
-                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/matiousp/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                    <div style="padding:16px;">
-                        <a href="https://www.instagram.com/matiousp/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
-                            <div style=" display: flex; flex-direction: row; align-items: center;">
-                                <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-                                <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                                    <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                                    <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-                                </div>
-                            </div>
-                            <div style="padding: 19% 0;"></div>
-                            <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                                <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                                            <g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div style="padding-top: 8px;">
-                                <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this profile on Instagram</div>
-                            </div>
-                            <div style="padding: 12.5% 0;"></div>
-                        </a>
-                    </div>
-                </blockquote>
-            </div>
-
-            <div class="social-links">
-                <a href="https://www.instagram.com/matiousp/" target="_blank" class="social-btn">
-                    <span data-fr="Suivez-moi sur Instagram" data-eu="Jarraitu Instagram-en">Suivez-moi sur Instagram</span>
-                </a>
+                <div class="tarif-custom">
+                    <h3 data-i18n="pricing.customTitle">Besoin d'une prestation sur mesure ?</h3>
+                    <p data-i18n="pricing.customText">Chaque événement est unique. Contactez-moi pour un devis personnalisé adapté à vos besoins spécifiques : durée différente, répertoire particulier, apprentissage de chansons...</p>
+                    <a href="#contact" class="btn-secondary" data-i18n="pricing.customCta">Demander un devis</a>
+                </div>
             </div>
         </div>
     </section>
@@ -253,66 +273,54 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title" data-fr="Contact & Réservation" data-eu="Kontaktua & Erreserba">Contact & Réservation</h2>
-                <div class="title-underline"></div>
-            </div>
-            <p class="section-description"
-               data-fr="Intéressé par mes services ? Contactez-moi pour discuter de votre projet et obtenir un devis personnalisé."
-               data-eu="Nire zerbitzuetan interesatua? Jar zaitez nirekin harremanetan zure proiektuari buruz hitz egiteko eta aurrekontu pertsonalizatua lortzeko.">
-                Intéressé par mes services ? Contactez-moi pour discuter de votre projet et obtenir un devis personnalisé.
-            </p>
+            <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+            <p class="section-subtitle" data-i18n="contact.subtitle">Envie d'échanger sur votre projet ? Je suis à votre écoute !</p>
+
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">📧</div>
-                        <div>
-                            <h3 data-fr="Email" data-eu="Email">Email</h3>
-                            <a href="mailto:matias.larrart@gmail.com">matias.larrart@gmail.com</a>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
                         </div>
+                        <h3 data-i18n="contact.phoneTitle">Téléphone</h3>
+                        <a href="tel:+33652067380" class="contact-link">+33 6 52 06 73 80</a>
+                        <p class="contact-note" data-i18n="contact.phoneNote">Disponible 7j/7</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📱</div>
-                        <div>
-                            <h3 data-fr="Téléphone" data-eu="Telefonoa">Téléphone</h3>
-                            <a href="tel:+33652067380">06 52 06 73 80</a>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
                         </div>
+                        <h3 data-i18n="contact.emailTitle">Email</h3>
+                        <a href="mailto:matias.larrart@gmail.com" class="contact-link">matias.larrart@gmail.com</a>
+                        <p class="contact-note" data-i18n="contact.emailNote">Réponse sous 24h</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <h3 data-fr="Localisation" data-eu="Kokapena">Localisation</h3>
-                            <p data-fr="Biarritz, Pays Basque" data-eu="Biarritz, Euskal Herria">Biarritz, Pays Basque</p>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">🌐</div>
-                        <div>
-                            <h3>Instagram</h3>
-                            <a href="https://www.instagram.com/matiousp/" target="_blank">@matiousp</a>
-                        </div>
+                        <h3 data-i18n="contact.locationTitle">Localisation</h3>
+                        <p class="contact-location" data-i18n="contact.locationText">Basé à Biarritz</p>
+                        <p class="contact-note" data-i18n="contact.locationNote">Nouvelle-Aquitaine & Pays Basque</p>
                     </div>
                 </div>
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" required placeholder=" ">
-                            <label for="name" data-fr="Nom" data-eu="Izena">Nom</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" required placeholder=" ">
-                            <label for="email" data-fr="Email" data-eu="Email">Email</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder=" ">
-                            <label for="phone" data-fr="Téléphone" data-eu="Telefonoa">Téléphone</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
-                            <label for="message" data-fr="Message" data-eu="Mezua">Message</label>
-                        </div>
-                        <button type="submit" class="submit-btn" data-fr="Envoyer" data-eu="Bidali">Envoyer</button>
-                    </form>
+
+                <div class="contact-cta">
+                    <h3 data-i18n="contact.ctaTitle">Prêt à donner vie à votre événement ?</h3>
+                    <p data-i18n="contact.ctaText">Que ce soit pour un mariage, un anniversaire, une soirée en bar ou tout autre événement, je serai ravi d'en discuter avec vous.</p>
+                    <div class="cta-buttons">
+                        <a href="tel:+33652067380" class="btn-primary" data-i18n="contact.ctaButton1">Appeler maintenant</a>
+                        <a href="mailto:matias.larrart@gmail.com" class="btn-secondary" data-i18n="contact.ctaButton2">Envoyer un email</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -321,16 +329,28 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Matious P - <span data-fr="Tous droits réservés" data-eu="Eskubide guztiak erreserbatuta">Tous droits réservés</span></p>
-            <div class="footer-links">
-                <a href="https://www.instagram.com/matiousp/" target="_blank">Instagram</a>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Matias Durruty</h3>
+                    <p data-i18n="footer.subtitle">Musicien professionnel • Guitare & Chant</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#accueil" data-i18n="nav.home">Accueil</a>
+                    <a href="#a-propos" data-i18n="nav.about">À Propos</a>
+                    <a href="#prestations" data-i18n="nav.services">Prestations</a>
+                    <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+                    <a href="#tarifs" data-i18n="nav.pricing">Tarifs</a>
+                    <a href="#contact" data-i18n="nav.contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 Matias Durruty. Tous droits réservés.</p>
+                <p class="footer-quote" data-i18n="footer.quote">« La musique se partage, elle ne doit pas partager les gens. »</p>
             </div>
         </div>
     </footer>
 
-    <!-- Instagram Embed Script -->
-    <script async src="//www.instagram.com/embed.js"></script>
-    <!-- Main Script -->
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
