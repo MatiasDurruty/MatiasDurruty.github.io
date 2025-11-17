@@ -89,13 +89,13 @@ const translations = {
         pricing: {
             title: "Tarifs",
             amount: "200€",
-            duration: "pour 2 heures",
+            duration: "pour une soirée mariage",
             detail1: "Prestation de 2 heures de musique",
             detail2: "Possibilité d'entrecouper de discours et temps de pause",
             detail3: "Équipement professionnel inclus",
             detail4: "Déplacement Nouvelle-Aquitaine & Pays Basque",
             customTitle: "Besoin d'une prestation sur mesure ?",
-            customText: "Chaque événement est unique. Contactez-moi pour un devis personnalisé adapté à vos besoins spécifiques : durée différente, répertoire particulier, apprentissage de chansons...",
+            customText: "Chaque événement est unique. Pour les bars et pubs, je propose des formules flexibles basées sur un pourcentage des recettes de la soirée dans le cadre de partenariats réguliers. Les tarifs s'adaptent à votre budget et au type d'événement. Contactez-moi pour en discuter : durée différente, répertoire particulier, apprentissage de chansons...",
             customCta: "Demander un devis"
         },
 
@@ -209,13 +209,13 @@ const translations = {
         pricing: {
             title: "Pricing",
             amount: "€200",
-            duration: "for 2 hours",
+            duration: "for a wedding evening",
             detail1: "2-hour music performance",
             detail2: "Possibility to alternate with speeches and breaks",
             detail3: "Professional equipment included",
             detail4: "Travel in New Aquitaine & Basque Country",
             customTitle: "Need a custom performance?",
-            customText: "Every event is unique. Contact me for a personalized quote adapted to your specific needs: different duration, particular repertoire, song learning...",
+            customText: "Every event is unique. For bars and pubs, I offer flexible arrangements based on a percentage of the evening's revenue as part of regular partnerships. Rates adapt to your budget and event type. Contact me to discuss: different duration, particular repertoire, song learning...",
             customCta: "Request a quote"
         },
 
@@ -329,13 +329,13 @@ const translations = {
         pricing: {
             title: "Prezioak",
             amount: "200€",
-            duration: "2 ordurako",
+            duration: "ezkontza gau baterako",
             detail1: "2 orduko musika prestakuntza",
             detail2: "Hitzaldiak eta atseden tarteak txertatzeko aukera",
             detail3: "Ekipamendu profesionala sartua",
             detail4: "Akitania Berria eta Euskal Herrira mugitzea",
             customTitle: "Neurrizko prestakuntza bat behar duzu?",
-            customText: "Ekitaldi bakoitza bakarra da. Kontaktatu nazazu zure behar zehatzetara egokitutako aurrekontu pertsonalizaturako: iraupena ezberdin, errepertorio partikular, abestien ikasketa...",
+            customText: "Ekitaldi bakoitza bakarra da. Taberna eta pubentzat, partaidetzak erregular baten testuinguruan gaueko sarreraren ehuneko batean oinarritutako formula malguak eskaintzen ditut. Tarifak zure aurrekontuari eta ekitaldi motari egokitzen zaio. Kontaktatu nazazu hitz egiteko: iraupena ezberdin, errepertorio partikular, abestien ikasketa...",
             customCta: "Aurrekontua eskatu"
         },
 
@@ -449,13 +449,13 @@ const translations = {
         pricing: {
             title: "Tarifas",
             amount: "200€",
-            duration: "por 2 horas",
+            duration: "por una noche de boda",
             detail1: "Actuación de 2 horas de música",
             detail2: "Posibilidad de intercalar discursos y tiempos de pausa",
             detail3: "Equipo profesional incluido",
             detail4: "Desplazamiento Nueva Aquitania y País Vasco",
             customTitle: "¿Necesitas una actuación a medida?",
-            customText: "Cada evento es único. Contáctame para un presupuesto personalizado adaptado a tus necesidades específicas: duración diferente, repertorio particular, aprendizaje de canciones...",
+            customText: "Cada evento es único. Para bares y pubs, ofrezco fórmulas flexibles basadas en un porcentaje de los ingresos de la noche en el marco de colaboraciones regulares. Las tarifas se adaptan a tu presupuesto y tipo de evento. Contáctame para hablarlo: duración diferente, repertorio particular, aprendizaje de canciones...",
             customCta: "Solicitar presupuesto"
         },
 
