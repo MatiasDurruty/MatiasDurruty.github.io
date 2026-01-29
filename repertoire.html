@@ -49,58 +49,47 @@
         </div>
     </section>
 
-    <!-- Search Section -->
-    <section class="repertoire-search">
-        <div class="container">
-            <div class="search-box">
-                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="m21 21-4.35-4.35"></path>
-                </svg>
-                <input type="text" id="searchInput" placeholder="Rechercher par titre, artiste ou paroles..." data-i18n-placeholder="repertoire.searchPlaceholder" aria-label="Rechercher des chansons">
-                <button id="clearSearch" class="clear-btn hidden" aria-label="Clear search">✕</button>
-            </div>
-            <div class="search-stats">
-                <span id="resultCount">34 chansons</span>
-            </div>
-        </div>
-    </section>
-
     <!-- Songs List Section -->
-    <section class="repertoire-list">
+    <section class="repertoire-list-simple">
         <div class="container">
-            <div id="songsContainer" class="songs-grid">
-                <!-- Dynamically populated by JavaScript -->
-            </div>
-            <div id="noResults" class="no-results hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-                <p data-i18n="repertoire.noResults">Aucune chanson trouvée</p>
-            </div>
+            <ul class="song-list">
+                <li><a href="repertoire/13-agurra-aurresku.html"><strong>Agurra Aurresku</strong> <span>Unknown</span></a></li>
+                <li><a href="repertoire/23-ametsetan.html"><strong>Ametsetan</strong> <span>En Tol Sarmiento</span></a></li>
+                <li><a href="repertoire/42-amodio-ezti.html"><strong>Amodio Ezti</strong> <span>Anje Duhalde</span></a></li>
+                <li><a href="repertoire/41-arrosako-zolan.html"><strong>Arrosako Zolan</strong> <span>Unknown</span></a></li>
+                <li><a href="repertoire/38-azken-dantza-hau.html"><strong>Azken Dantza Hau</strong> <span>Unknown</span></a></li>
+                <li><a href="repertoire/04-baga-biga.html"><strong>Baga Biga</strong> <span>Mikel Laboa</span></a></li>
+                <li><a href="repertoire/07-bagare.html"><strong>Bagare</strong> <span>Unknown</span></a></li>
+                <li><a href="repertoire/19-begitara-begira.html"><strong>Begitara Begira</strong> <span>Vendetta</span></a></li>
+                <li><a href="repertoire/24-bi-begi-bi-lore.html"><strong>Bi Begi Bi Lore</strong> <span>Janus Lester (feat. Nøgen on some versions)</span></a></li>
+                <li><a href="repertoire/25-dap-dap.html"><strong>Dap Dap</strong> <span>Janus Lester (Jokin Pinatxo from Bera)</span></a></li>
+                <li><a href="repertoire/15-eguzkiloreak.html"><strong>Eguzkiloreak</strong> <span>Zetak feat. Neomak</span></a></li>
+                <li><a href="repertoire/22-errefuxiatuena.html"><strong>Errefuxiatuena</strong> <span>Izaro feat. Mikel Urdangarin</span></a></li>
+                <li><a href="repertoire/08-gogoaren-baitan.html"><strong>Gogoaren Baitan</strong> <span>Benito Lertxundi</span></a></li>
+                <li><a href="repertoire/02-guk-euskaraz.html"><strong>Guk Euskaraz</strong> <span>Herri Kirolak / Various</span></a></li>
+                <li><a href="repertoire/11-haizea.html"><strong>Haizea</strong> <span>Ken Zazpi</span></a></li>
+                <li><a href="repertoire/03-hegoak.html"><strong>Hegoak</strong> <span>Mikel Laboa (Txoria Txori)</span></a></li>
+                <li><a href="repertoire/17-hileta-kantu-nafarra.html"><strong>Hileta Kantu Nafarra</strong> <span>Zetak</span></a></li>
+                <li><a href="repertoire/26-hitzeman.html"><strong>Hitzeman</strong> <span>Various Artists</span></a></li>
+                <li><a href="repertoire/14-ilargi-berriak.html"><strong>Ilargi Berriak</strong> <span>Neomak</span></a></li>
+                <li><a href="repertoire/09-ilargia.html"><strong>Ilargia</strong> <span>Ken Zazpi</span></a></li>
+                <li><a href="repertoire/21-itsasoa-gara.html"><strong>Itsasoa Gara</strong> <span>Ken Zazpi</span></a></li>
+                <li><a href="repertoire/27-itzulera.html"><strong>Itzulera</strong> <span>Zetak feat. Erramun Martikorena</span></a></li>
+                <li><a href="repertoire/29-izarren-hautsa.html"><strong>Izarren Hautsa</strong> <span>Ken Zazpi</span></a></li>
+                <li><a href="repertoire/61-kantu-bat.html"><strong>Kantu bat</strong> <span>Bulego</span></a></li>
+                <li><a href="repertoire/01-lau-teilatu.html"><strong>Lau Teilatu</strong> <span>Itoiz</span></a></li>
+                <li><a href="repertoire/06-loretxoa.html"><strong>Loretxoa</strong> <span>Benito Lertxundi</span></a></li>
+                <li><a href="repertoire/37-martxa-baten-lehen-notak.html"><strong>Martxa Baten Lehen Notak</strong> <span>Mikel Laboa</span></a></li>
+                <li><a href="repertoire/34-udarako-gau-luzeak.html"><strong>Udarako Gau Luzeak</strong> <span>Vendetta</span></a></li>
+                <li><a href="repertoire/12-udazken-koloretan.html"><strong>Udazken Koloretan</strong> <span>Benito Lertxundi</span></a></li>
+                <li><a href="repertoire/05-xalbadoren-heriotzean.html"><strong>Xalbadoren Heriotzean</strong> <span>Benito Lertxundi</span></a></li>
+                <li><a href="repertoire/18-xorieri-mintzo-zen.html"><strong>Xorieri mintzo zen</strong> <span>Labeguerie</span></a></li>
+                <li><a href="repertoire/20-xorrotxak.html"><strong>Xorrotxak</strong> <span>Traditional</span></a></li>
+                <li><a href="repertoire/16-zeinen-ederra-izango-den.html"><strong>Zeinen Ederra Izango Den</strong> <span>Zetak</span></a></li>
+                <li><a href="repertoire/10-zenbat-min.html"><strong>Zenbat Min</strong> <span>Ken Zazpi</span></a></li>
+            </ul>
         </div>
     </section>
-
-    <!-- Song Modal -->
-    <div id="songModal" class="modal hidden">
-        <div class="modal-overlay"></div>
-        <div class="modal-content">
-            <button class="modal-close" aria-label="Close modal">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-            </button>
-            <div class="modal-header">
-                <h2 id="modalTitle"></h2>
-                <p id="modalArtist"></p>
-            </div>
-            <div class="modal-body">
-                <div id="modalLyrics" class="lyrics-display"></div>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -128,8 +117,6 @@
     </footer>
 
     <script src="translations.js"></script>
-    <script src="repertoire-data.js"></script>
-    <script src="repertoire.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

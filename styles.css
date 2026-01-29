@@ -1708,3 +1708,185 @@ section {
         font-size: 1rem;
     }
 }
+
+/* ============================================
+   Simple Song List (No JS)
+   ============================================ */
+
+.repertoire-list-simple {
+    padding: 3rem 0 4rem;
+    background: var(--bg-cream);
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.song-list li {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(198, 40, 40, 0.1);
+}
+
+.song-list li:last-child {
+    border-bottom: none;
+}
+
+.song-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: var(--transition-fast);
+    gap: 1rem;
+}
+
+.song-list a:hover {
+    background: var(--bg-white);
+    transform: translateX(5px);
+}
+
+.song-list a strong {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    flex: 1;
+}
+
+.song-list a span {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-style: italic;
+    text-align: right;
+}
+
+/* Individual Song Page */
+.song-page {
+    padding: 3rem 0 4rem;
+    background: var(--bg-cream);
+    min-height: 60vh;
+}
+
+.back-link {
+    margin-bottom: 2rem;
+}
+
+.back-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: var(--transition-fast);
+}
+
+.back-link a:hover {
+    color: var(--secondary-color);
+    transform: translateX(-3px);
+    display: inline-block;
+}
+
+.song-page-header {
+    background: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.song-page-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.75rem;
+    font-family: var(--font-heading);
+}
+
+.song-page-artist {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.song-page-lyrics {
+    background: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    line-height: 1.8;
+}
+
+.song-page-lyrics p {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+}
+
+.song-page-lyrics p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive: Simple List Mobile */
+@media (max-width: 768px) {
+    .repertoire-list-simple {
+        padding: 2rem 0 3rem;
+    }
+
+    .song-list {
+        padding: 0 0.75rem;
+    }
+
+    .song-list a {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 1.25rem;
+        gap: 0.5rem;
+    }
+
+    .song-list a strong {
+        font-size: 1.05rem;
+    }
+
+    .song-list a span {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .song-page {
+        padding: 2rem 0 3rem;
+    }
+
+    .song-page .container {
+        padding: 0 0.75rem;
+    }
+
+    .back-link {
+        margin-bottom: 1.5rem;
+    }
+
+    .song-page-header {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .song-page-header h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .song-page-artist {
+        font-size: 1rem;
+    }
+
+    .song-page-lyrics {
+        padding: 1.5rem;
+    }
+
+    .song-page-lyrics p {
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
+    }
+}
