@@ -17,6 +17,7 @@ const translations = {
             about: "À Propos",
             services: "Prestations",
             portfolio: "Portfolio",
+            repertoire: "Repertoire",
             pricing: "Tarifs",
             contact: "Contact"
         },
@@ -121,6 +122,16 @@ const translations = {
             subtitle: "Musicien professionnel • Guitare & Chant",
             copyright: "© 2025 Matias Durruty. Tous droits réservés.",
             quote: "« La musique se partage, elle ne doit pas partager les gens. »"
+        },
+
+        // Repertoire Section
+        repertoire: {
+            title: "Repertoire Euskaldun",
+            subtitle: "34 chansons basques traditionnelles et modernes",
+            searchPlaceholder: "Rechercher par titre, artiste ou paroles...",
+            viewLyrics: "Voir les paroles",
+            noResults: "Aucune chanson trouvée",
+            songsCount: "{count} chanson(s)"
         }
     },
 
@@ -137,6 +148,7 @@ const translations = {
             about: "About",
             services: "Services",
             portfolio: "Portfolio",
+            repertoire: "Repertoire",
             pricing: "Pricing",
             contact: "Contact"
         },
@@ -241,6 +253,16 @@ const translations = {
             subtitle: "Professional musician • Guitar & Vocals",
             copyright: "© 2025 Matias Durruty. All rights reserved.",
             quote: "\"Music is meant to be shared, it should not divide people.\""
+        },
+
+        // Repertoire Section
+        repertoire: {
+            title: "Basque Repertoire",
+            subtitle: "34 traditional and modern Basque songs",
+            searchPlaceholder: "Search by title, artist or lyrics...",
+            viewLyrics: "View lyrics",
+            noResults: "No song found",
+            songsCount: "{count} song(s)"
         }
     },
 
@@ -257,6 +279,7 @@ const translations = {
             about: "Niri buruz",
             services: "Zerbitzuak",
             portfolio: "Portfolio",
+            repertoire: "Errepertorioa",
             pricing: "Prezioak",
             contact: "Kontaktua"
         },
@@ -361,6 +384,16 @@ const translations = {
             subtitle: "Musikari profesionala • Gitarra eta Ahotsa",
             copyright: "© 2025 Matias Durruty. Eskubide guztiak gordetzen dira.",
             quote: "« Musika partekatzekoa da, ez du jendea bereizi behar. »"
+        },
+
+        // Repertoire Section
+        repertoire: {
+            title: "Euskal Errepertorioa",
+            subtitle: "34 euskal abesti tradizional eta moderno",
+            searchPlaceholder: "Bilatu izenburuaren, artistaren edo letren arabera...",
+            viewLyrics: "Ikusi letrak",
+            noResults: "Ez da abestirik aurkitu",
+            songsCount: "{count} abesti"
         }
     },
 
@@ -377,6 +410,7 @@ const translations = {
             about: "Sobre mí",
             services: "Servicios",
             portfolio: "Portfolio",
+            repertoire: "Repertorio",
             pricing: "Tarifas",
             contact: "Contacto"
         },
@@ -481,6 +515,16 @@ const translations = {
             subtitle: "Músico profesional • Guitarra y Voz",
             copyright: "© 2025 Matias Durruty. Todos los derechos reservados.",
             quote: "« La música se comparte, no debe dividir a la gente. »"
+        },
+
+        // Repertoire Section
+        repertoire: {
+            title: "Repertorio Vasco",
+            subtitle: "34 canciones vascas tradicionales y modernas",
+            searchPlaceholder: "Buscar por título, artista o letras...",
+            viewLyrics: "Ver letras",
+            noResults: "No se encontró ninguna canción",
+            songsCount: "{count} canción(es)"
         }
     }
 };

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr" data-lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Repertoire Euskaldun - Matias Durruty. 34 chansons basques traditionnelles et modernes. Consultez les paroles de mes chants basques.">
+    <meta name="keywords" content="repertoire basque, chansons basques, musique euskara, paroles basques, Pays Basque">
+    <title>Repertoire Euskaldun - Matias Durruty</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Matias Durruty</a>
+            <div class="nav-right">
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="fr" aria-label="Français">FR</button>
+                    <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                    <button class="lang-btn" data-lang="eu" aria-label="Euskara">EU</button>
+                    <button class="lang-btn" data-lang="es" aria-label="Español">ES</button>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html#accueil" data-i18n="nav.home">Accueil</a></li>
+                    <li><a href="index.html#a-propos" data-i18n="nav.about">À Propos</a></li>
+                    <li><a href="index.html#prestations" data-i18n="nav.services">Prestations</a></li>
+                    <li><a href="index.html#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                    <li><a href="repertoire.html" class="active" data-i18n="nav.repertoire">Repertoire</a></li>
+                    <li><a href="index.html#tarifs" data-i18n="nav.pricing">Tarifs</a></li>
+                    <li><a href="index.html#contact" class="btn-contact" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Repertoire Hero Section -->
+    <section class="repertoire-hero">
+        <div class="container">
+            <h1 class="hero-title" data-i18n="repertoire.title">Repertoire Euskaldun</h1>
+            <p class="hero-subtitle" data-i18n="repertoire.subtitle">34 chansons basques traditionnelles et modernes</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="repertoire-search">
+        <div class="container">
+            <div class="search-box">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text" id="searchInput" placeholder="Rechercher par titre, artiste ou paroles..." data-i18n-placeholder="repertoire.searchPlaceholder" aria-label="Rechercher des chansons">
+                <button id="clearSearch" class="clear-btn hidden" aria-label="Clear search">✕</button>
+            </div>
+            <div class="search-stats">
+                <span id="resultCount">34 chansons</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Songs List Section -->
+    <section class="repertoire-list">
+        <div class="container">
+            <div id="songsContainer" class="songs-grid">
+                <!-- Dynamically populated by JavaScript -->
+            </div>
+            <div id="noResults" class="no-results hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <p data-i18n="repertoire.noResults">Aucune chanson trouvée</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Song Modal -->
+    <div id="songModal" class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <p id="modalArtist"></p>
+            </div>
+            <div class="modal-body">
+                <div id="modalLyrics" class="lyrics-display"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Matias Durruty</h3>
+                    <p data-i18n="footer.subtitle">Musicien professionnel • Guitare & Chant</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#accueil" data-i18n="nav.home">Accueil</a>
+                    <a href="index.html#a-propos" data-i18n="nav.about">À Propos</a>
+                    <a href="index.html#prestations" data-i18n="nav.services">Prestations</a>
+                    <a href="index.html#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+                    <a href="repertoire.html" data-i18n="nav.repertoire">Repertoire</a>
+                    <a href="index.html#tarifs" data-i18n="nav.pricing">Tarifs</a>
+                    <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2025 Matias Durruty. Tous droits réservés.</p>
+                <p class="footer-quote" data-i18n="footer.quote">« La musique se partage, elle ne doit pas partager les gens. »</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="repertoire-data.js"></script>
+    <script src="repertoire.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
