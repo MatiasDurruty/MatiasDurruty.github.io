@@ -34,7 +34,7 @@ const translations = {
         // About Section
         about: {
             title: "À Propos",
-            lead: "Trentenaire basé à Biarritz, j'ai eu la chance de jouer avec de nombreux groupes musicaux au fil des années. Aujourd'hui, je m'épanouis exclusivement dans le jeu en solo, guitare et chant, en interprétant des reprises connues qui donnent envie aux gens de chanter et danser.",
+            lead: "Originaire de Saint-Pée-sur-Nivelle, j'ai eu la chance de jouer avec de nombreux groupes musicaux au fil des années. Aujourd'hui, je m'épanouis exclusivement dans le jeu en solo, guitare et chant, en interprétant des reprises connues qui donnent envie aux gens de chanter et danser.",
             paragraph1: "Mon style musical est <strong>varié et adapté à vos envies</strong>. Je propose plusieurs sets suivant vos demandes : chants basques entraînants, covers flamenco, variété française, anglaise, espagnole, ou encore un mélange de tout ça !",
             paragraph2: "J'aime animer des événements variés à la guitare et au chant. Mon plaisir est communicatif, et je cherche avant tout <strong>la joie et le plaisir des gens</strong> qui participent à l'animation.",
             quote: "« La musique se partage, elle ne doit pas partager les gens. »",
@@ -63,7 +63,7 @@ const translations = {
             detail1Title: "Apprentissage sur demande",
             detail1Text: "Je peux apprendre vos chansons préférées et créer des covers guitare-chant spécialement pour votre événement.",
             detail2Title: "Équipement autonome",
-            detail2Text: "Je viens avec mon matériel : guitare électro-acoustique et micro chant, sonorisé et amplifié. Seule une prise électrique à proximité est nécessaire.",
+            detail2Text: "Je viens avec mon matériel : guitare électro-acoustique et micro chant, une enceinte 15 pouces 1000W sur pied, et un retour audio via écouteurs. Seule une prise électrique à proximité est nécessaire.",
             detail3Title: "Zone de déplacement",
             detail3Text: "Je me déplace en Nouvelle-Aquitaine et au Pays Basque (Hego Alde). Basé à Biarritz."
         },
@@ -83,21 +83,21 @@ const translations = {
             event2Text: "Un set varié et entraînant mélangeant variétés basques, françaises et européennes. Une soirée festive où le public a chanté et dansé jusqu'au bout de la nuit dans une ambiance conviviale.",
             event2Tag1: "Fête Nationale",
             event2Tag2: "Mix Varié",
-            event2Tag3: "Marbella"
+            event2Tag3: "Marbella",
+            event3Title: "Soirée Karaoké",
+            event3Location: "Craft Beer Bar, Anglet",
+            event3Text: "Une soirée karaoké animée en live à la guitare et au chant, avec les paroles projetées au mur. Chansons en anglais, espagnol, français et basque pour que tout le monde puisse chanter, quel que soit son horizon musical.",
+            event3Tag1: "Karaoké",
+            event3Tag2: "Multilingue",
+            event3Tag3: "Anglet"
         },
 
         // Pricing Section
         pricing: {
             title: "Tarifs",
-            amount: "200€",
-            duration: "pour une soirée mariage",
-            detail1: "Prestation de 2 heures de musique",
-            detail2: "Possibilité d'entrecouper de discours et temps de pause",
-            detail3: "Équipement professionnel inclus",
-            detail4: "Déplacement Nouvelle-Aquitaine & Pays Basque",
-            customTitle: "Besoin d'une prestation sur mesure ?",
-            customText: "Chaque événement est unique. Pour les bars et pubs, je propose des formules flexibles basées sur un pourcentage des recettes de la soirée dans le cadre de partenariats réguliers. Les tarifs s'adaptent à votre budget et au type d'événement. Contactez-moi pour en discuter : durée différente, répertoire particulier, apprentissage de chansons...",
-            customCta: "Demander un devis"
+            customTitle: "Chaque événement est unique.",
+            customText: "Les tarifs s'adaptent à la durée, au type d'événement et à vos besoins spécifiques. Contactez-moi pour que l'on en discute ensemble.",
+            customCta: "Contactez-moi pour un devis"
         },
 
         // Contact Section
@@ -165,7 +165,7 @@ const translations = {
         // About Section
         about: {
             title: "About Me",
-            lead: "Based in Biarritz in my thirties, I've had the chance to play with numerous musical groups over the years. Today, I thrive exclusively in solo performance, guitar and vocals, interpreting well-known covers that make people want to sing and dance.",
+            lead: "Originally from Saint-Pée-sur-Nivelle, I've had the chance to play with numerous musical groups over the years. Today, I thrive exclusively in solo performance, guitar and vocals, interpreting well-known covers that make people want to sing and dance.",
             paragraph1: "My musical style is <strong>varied and adapted to your wishes</strong>. I offer several sets according to your requests: upbeat Basque songs, flamenco covers, French, English, Spanish variety, or even a mix of all that!",
             paragraph2: "I love entertaining varied events with guitar and vocals. My pleasure is contagious, and I seek above all <strong>the joy and pleasure</strong> of the people participating in the entertainment.",
             quote: "\"Music is meant to be shared, it should not divide people.\"",
@@ -194,7 +194,7 @@ const translations = {
             detail1Title: "Learning on request",
             detail1Text: "I can learn your favorite songs and create guitar-vocal covers specifically for your event.",
             detail2Title: "Self-sufficient equipment",
-            detail2Text: "I come with my equipment: electro-acoustic guitar and vocal microphone, amplified and with sound system. Only a nearby electrical outlet is required.",
+            detail2Text: "I come with my equipment: electro-acoustic guitar and vocal microphone, a 15-inch 1000W speaker on a stand, and an audio monitor via earphones. Only a nearby electrical outlet is required.",
             detail3Title: "Travel area",
             detail3Text: "I travel throughout New Aquitaine and the Basque Country (Hego Alde). Based in Biarritz."
         },
@@ -214,21 +214,21 @@ const translations = {
             event2Text: "A varied and upbeat set mixing Basque, French and European varieties. A festive evening where the audience sang and danced until late into the night in a friendly atmosphere.",
             event2Tag1: "National Holiday",
             event2Tag2: "Varied Mix",
-            event2Tag3: "Marbella"
+            event2Tag3: "Marbella",
+            event3Title: "Karaoke Night",
+            event3Location: "Craft Beer Bar, Anglet",
+            event3Text: "A live karaoke night with guitar and vocals, lyrics projected on the wall. Songs in English, Spanish, French and Basque so everyone can sing along, whatever their musical background.",
+            event3Tag1: "Karaoke",
+            event3Tag2: "Multilingual",
+            event3Tag3: "Anglet"
         },
 
         // Pricing Section
         pricing: {
             title: "Pricing",
-            amount: "€200",
-            duration: "for a wedding evening",
-            detail1: "2-hour music performance",
-            detail2: "Possibility to alternate with speeches and breaks",
-            detail3: "Professional equipment included",
-            detail4: "Travel in New Aquitaine & Basque Country",
-            customTitle: "Need a custom performance?",
-            customText: "Every event is unique. For bars and pubs, I offer flexible arrangements based on a percentage of the evening's revenue as part of regular partnerships. Rates adapt to your budget and event type. Contact me to discuss: different duration, particular repertoire, song learning...",
-            customCta: "Request a quote"
+            customTitle: "Every event is unique.",
+            customText: "Rates adapt to the duration, type of event and your specific needs. Contact me so we can discuss it together.",
+            customCta: "Contact me for a quote"
         },
 
         // Contact Section
@@ -296,7 +296,7 @@ const translations = {
         // About Section
         about: {
             title: "Niri buruz",
-            lead: "Miarritzen kokatutako hogeita hamar urteko gizona, urteen poderioz talde musikalarekin jotzeko aukera izan dut. Gaur egun, bakarka aritzen naiz, gitarra eta ahotsa, jendeak kantatu eta dantzatu nahi dituen bertsio ezagunak interpretatuz.",
+            lead: "Senpere-tik jatorria izanik, urteen poderioz talde musikalarekin jotzeko aukera izan dut. Gaur egun, bakarka aritzen naiz, gitarra eta ahotsa, jendeak kantatu eta dantzatu nahi dituen bertsio ezagunak interpretatuz.",
             paragraph1: "Nire estilo musikala <strong>aldakorra da eta zure gustuetara egokitua</strong>. Hainbat set eskaintzen ditut zure eskaeren arabera: kanta euskal kementsuak, flamenco bertsioak, frantses, ingelesa, espainiar barietatea, edo horien guztien nahasketa!",
             paragraph2: "Gustuko ditut gitarra eta ahotsarekin ekitaldi anitzak animatzea. Nire plazera kutsagarria da, eta batez ere animazioan parte hartzen duten jendearen <strong>poza eta atsegina</strong> bilatzen dut.",
             quote: "« Musika partekatzekoa da, ez du jendea bereizi behar. »",
@@ -325,7 +325,7 @@ const translations = {
             detail1Title: "Eskaeran ikastea",
             detail1Text: "Zure abesti gogokoena ikasi eta gitarra-ahots bertsioak sortu ditzaket zure ekitaldirako berariaz.",
             detail2Title: "Ekipamendu autonomoa",
-            detail2Text: "Nire materialarekin etortzen naiz: gitarra elektro-akustikoa eta ahots mikrofonoa, soinuarekin eta anplifikatua. Gertu presa elektriko bat behar da soilik.",
+            detail2Text: "Nire materialarekin etortzen naiz: gitarra elektro-akustikoa eta ahots mikrofonoa, 15 hazbeteko 1000W enceinte bat tripodean, eta audio itzulera entzungailuen bidez. Gertu presa elektriko bat behar da soilik.",
             detail3Title: "Mugitzeko eremua",
             detail3Text: "Akitania Berria eta Euskal Herrira (Hego Alde) mugitzen naiz. Miarritzen kokatua."
         },
@@ -345,21 +345,21 @@ const translations = {
             event2Text: "Set aldakorra eta kementsuak euskal, frantses eta europear barietateak nahasten. Gau jaiatsua publikoa abestuarekin eta azken ordu arte dantzarekin giro atsegina batean.",
             event2Tag1: "Jai Nazionala",
             event2Tag2: "Mix Aldakorra",
-            event2Tag3: "Marbella"
+            event2Tag3: "Marbella",
+            event3Title: "Karaoke Gaua",
+            event3Location: "Craft Beer Bar, Anglet",
+            event3Text: "Karaoke gau bizia gitarra eta ahotsarekin zuzenean, letrak horman proiektatuta. Abestiak ingelesez, gaztelaniaz, frantsesez eta euskaraz, denak kantatu ahal izateko, edozein musika jatorrikoak izanda ere.",
+            event3Tag1: "Karaokea",
+            event3Tag2: "Eleaniztuna",
+            event3Tag3: "Anglet"
         },
 
         // Pricing Section
         pricing: {
             title: "Prezioak",
-            amount: "200€",
-            duration: "ezkontza gau baterako",
-            detail1: "2 orduko musika prestakuntza",
-            detail2: "Hitzaldiak eta atseden tarteak txertatzeko aukera",
-            detail3: "Ekipamendu profesionala sartua",
-            detail4: "Akitania Berria eta Euskal Herrira mugitzea",
-            customTitle: "Neurrizko prestakuntza bat behar duzu?",
-            customText: "Ekitaldi bakoitza bakarra da. Taberna eta pubentzat, partaidetzak erregular baten testuinguruan gaueko sarreraren ehuneko batean oinarritutako formula malguak eskaintzen ditut. Tarifak zure aurrekontuari eta ekitaldi motari egokitzen zaio. Kontaktatu nazazu hitz egiteko: iraupena ezberdin, errepertorio partikular, abestien ikasketa...",
-            customCta: "Aurrekontua eskatu"
+            customTitle: "Ekitaldi bakoitza bakarra da.",
+            customText: "Tarifak iraupenerara, ekitaldi motara eta zure behar espezifikoetara egokitzen dira. Kontaktatu nazazu elkarrekin hitz egiteko.",
+            customCta: "Kontaktatu nazazu aurrekontu baterako"
         },
 
         // Contact Section
@@ -427,7 +427,7 @@ const translations = {
         // About Section
         about: {
             title: "Sobre mí",
-            lead: "Treintañero residente en Biarritz, he tenido la suerte de tocar con numerosos grupos musicales a lo largo de los años. Hoy en día, me realizo exclusivamente en la interpretación en solitario, guitarra y voz, interpretando versiones conocidas que dan ganas a la gente de cantar y bailar.",
+            lead: "Originario de Saint-Pée-sur-Nivelle, he tenido la suerte de tocar con numerosos grupos musicales a lo largo de los años. Hoy en día, me realizo exclusivamente en la interpretación en solitario, guitarra y voz, interpretando versiones conocidas que dan ganas a la gente de cantar y bailar.",
             paragraph1: "Mi estilo musical es <strong>variado y adaptado a tus deseos</strong>. Propongo varios sets según tus solicitudes: cantos vascos animados, covers flamenco, variedad francesa, inglesa, española, ¡o incluso una mezcla de todo eso!",
             paragraph2: "Me encanta animar eventos variados con guitarra y voz. Mi placer es contagioso, y busco ante todo <strong>la alegría y el placer</strong> de la gente que participa en la animación.",
             quote: "« La música se comparte, no debe dividir a la gente. »",
@@ -456,7 +456,7 @@ const translations = {
             detail1Title: "Aprendizaje bajo petición",
             detail1Text: "Puedo aprender tus canciones favoritas y crear covers guitarra-voz especialmente para tu evento.",
             detail2Title: "Equipo autónomo",
-            detail2Text: "Vengo con mi material: guitarra electroacústica y micrófono de voz, sonorizado y amplificado. Solo se requiere una toma eléctrica cercana.",
+            detail2Text: "Vengo con mi material: guitarra electroacústica y micrófono de voz, un altavoz de 15 pulgadas 1000W con pie, y un retorno de audio via auriculares. Solo se requiere una toma eléctrica cercana.",
             detail3Title: "Zona de desplazamiento",
             detail3Text: "Me desplazo por Nueva Aquitania y el País Vasco (Hego Alde). Residente en Biarritz."
         },
@@ -476,21 +476,21 @@ const translations = {
             event2Text: "Un set variado y animado mezclando variedades vascas, francesas y europeas. Una noche festiva donde el público cantó y bailó hasta altas horas de la noche en un ambiente acogedor.",
             event2Tag1: "Fiesta Nacional",
             event2Tag2: "Mix Variado",
-            event2Tag3: "Marbella"
+            event2Tag3: "Marbella",
+            event3Title: "Noche de Karaoke",
+            event3Location: "Craft Beer Bar, Anglet",
+            event3Text: "Una noche de karaoke animada en directo con guitarra y voz, con las letras proyectadas en la pared. Canciones en inglés, español, francés y vasco para que todo el mundo pueda cantar, sea cual sea su horizonte musical.",
+            event3Tag1: "Karaoke",
+            event3Tag2: "Multilingüe",
+            event3Tag3: "Anglet"
         },
 
         // Pricing Section
         pricing: {
             title: "Tarifas",
-            amount: "200€",
-            duration: "por una noche de boda",
-            detail1: "Actuación de 2 horas de música",
-            detail2: "Posibilidad de intercalar discursos y tiempos de pausa",
-            detail3: "Equipo profesional incluido",
-            detail4: "Desplazamiento Nueva Aquitania y País Vasco",
-            customTitle: "¿Necesitas una actuación a medida?",
-            customText: "Cada evento es único. Para bares y pubs, ofrezco fórmulas flexibles basadas en un porcentaje de los ingresos de la noche en el marco de colaboraciones regulares. Las tarifas se adaptan a tu presupuesto y tipo de evento. Contáctame para hablarlo: duración diferente, repertorio particular, aprendizaje de canciones...",
-            customCta: "Solicitar presupuesto"
+            customTitle: "Cada evento es único.",
+            customText: "Las tarifas se adaptan a la duración, el tipo de evento y tus necesidades específicas. Contáctame para que lo hablemos juntos.",
+            customCta: "Contáctame para un presupuesto"
         },
 
         // Contact Section

@@ -369,9 +369,31 @@ h1, h2, h3, h4, h5, h6 {
     animation: fadeInRight 1s ease 0.3s both;
 }
 
+.hero-photo {
+    width: 100%;
+    max-width: 800px;
+    height: 520px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
+    object-position: center;
+    transition: var(--transition-normal);
+}
+
+.hero-photo:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(198, 40, 40, 0.25);
+}
+
+.about-profile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+}
+
 .profile-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
     height: auto;
     border-radius: 20px;
     box-shadow: var(--shadow-lg);
@@ -1061,6 +1083,11 @@ h1, h2, h3, h4, h5, h6 {
     .hero-image {
         order: 1;
         margin-bottom: var(--spacing-md);
+    }
+
+    .hero-photo {
+        max-width: 100%;
+        height: 280px;
     }
 
     .hero-location {
