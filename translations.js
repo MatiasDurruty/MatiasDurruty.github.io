@@ -24,7 +24,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            title: "Matias Durruty",
+            title: "Chante Avec Moi",
             subtitle: "Musicien Solo • Guitare & Chant",
             location: "Biarritz • Pays Basque",
             cta: "Me contacter",
@@ -155,7 +155,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            title: "Matias Durruty",
+            title: "Sing With Me",
             subtitle: "Solo Musician • Guitar & Vocals",
             location: "Biarritz • Basque Country",
             cta: "Contact me",
@@ -286,7 +286,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            title: "Matias Durruty",
+            title: "Kanta Nirekin",
             subtitle: "Musikari Bakarra • Gitarra eta Ahotsa",
             location: "Miarritz • Euskal Herria",
             cta: "Kontaktatu nazazu",
@@ -417,7 +417,7 @@ const translations = {
 
         // Hero Section
         hero: {
-            title: "Matias Durruty",
+            title: "Canta Conmigo",
             subtitle: "Músico Solo • Guitarra y Voz",
             location: "Biarritz • País Vasco",
             cta: "Contáctame",
